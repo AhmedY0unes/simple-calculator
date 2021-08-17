@@ -16,24 +16,19 @@ function checkButton(buttonText)
         handleNumber(buttonText);
 }
 
-
 function handleNumber(value)
 {
     if(current ==='0')
         current = value;
     else
         current += value;
-
     calcScreen.innerText = current; // rewrite screen.
-
 }
   
 function handleText(text)
 {
-
     if(text === "C")
     {
-        
         current = '0';
         calcScreen.innerText = current;
         total =0;
@@ -55,7 +50,6 @@ function handleText(text)
             current = '0';
             calcScreen.innerText = current;
         }
-
     }
     else if(text ==='=')
     {
@@ -63,15 +57,13 @@ function handleText(text)
         else
         {    
             handleMath(op); //do the math
-            calcScreen.innerText = total; //print result
-            
+            calcScreen.innerText = total; //print result         
         }
     }
     else if(op !== null)
     {
         op = text;
         handleMath(op);
-
     }
     else //in case an operand button been clicked
      {
@@ -80,20 +72,18 @@ function handleText(text)
         current ='0';
         calcScreen.innerText = current;
      }
-
 }  
 function handleMath(op)
 {
-
     if(op ==='÷')
     {
-        total /= current;
+        total /= parseInt(current);
         current ='0';
         calcScreen.innerText = current;           
     }
     else if(op ==='x')
     {
-        total *= current;
+        total *= parseInt(current);
         current ='0';
         calcScreen.innerText = current;
 
@@ -110,9 +100,7 @@ function handleMath(op)
         total -= parseInt(current);
         current ='0';
         calcScreen.innerText = current;
-
-    }
-    
+    }   
 }
 
 
