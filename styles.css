@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 .section{
     display: block;
@@ -30,7 +31,7 @@
 
 .calcButton{
     height: 90px;
-    background-color: #110c026c;
+    background-color: #3b39336c;
     color: white;
     font-size: 30px;
     cursor: pointer;
