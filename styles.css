@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.section{
+    display: block;
+
+}
+.calculator{
+    background-color: white;
+    width: 400px;
+
+}
+.row{
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+    margin-bottom: 0.5%;
+}
+.screen{
+    text-align:right ;
+    padding: 15px 5px;
+    font-size: 30px;
+    color: black;
+    background-color: white;
+
+
+}
+
+.calcButton{
+    height: 90px;
+    background-color: #110c026c;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    width: 24.5%;
+    border: none;
+    
+}
+.op{
+    background-color: chocolate;
+}
+.calcButton:hover{
+    background-color: black;
+}
